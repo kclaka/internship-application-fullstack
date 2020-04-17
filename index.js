@@ -6,9 +6,6 @@
  * subdomain url: https://takehome.cloudtut.workers.dev
  * 
  */
-
-
-
 const URL = 'https://cfw-takehome.developers.workers.dev/api/variants';
 
 addEventListener('fetch', event => {
