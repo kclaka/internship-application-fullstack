@@ -1,10 +1,7 @@
 const URL = 'https://cfw-takehome.developers.workers.dev/api/variants';
 
-
-
-
 addEventListener('fetch', event => {
-  respBody = fetchApi(URL);
+  apiData = fetchApi(URL);
   event.respondWith(API())
 })
 
@@ -18,14 +15,15 @@ async function fetchApi(URL){
   return data.json();
 }
 
-
+/**
+ * Get Response from API return a random of the two URLs
+ */
 const API = async function() {
-  const body = await respBody
-  const num = Math.round(Math.random()); 
-  if (num == 0){
-    return Response.redirect(body.variants[0], 302);
-  }
-  if(num == 1){
-    return Response.redirect(body.variants[1], 302);
+  const url = await apiData
+  const randomURL = Math.round(Math.random()); 
+  if (randomURL == 0){
+    return Response.redirect(url.variants[0], 302);
+  }else{
+    return Response.redirect(url.variants[1], 302);
   }
 }
