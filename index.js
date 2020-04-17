@@ -1,9 +1,10 @@
 /**
  * Cloudflare Internship Take Home
  * 
- * Api was published using cloudflare's workers
+ * Api was published using cloudflare's workers.dev
  * 
  * subdomain url: https://takehome.cloudtut.workers.dev
+ * 
  */
 
 
