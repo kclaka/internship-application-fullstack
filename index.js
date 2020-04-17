@@ -1,10 +1,19 @@
+/**
+ * Cloudflare Internship Take Home
+ * 
+ * Api was published using cloudflare's workers
+ * 
+ * subdomain url: https://takehome.cloudtut.workers.dev
+ */
+
+
+
 const URL = 'https://cfw-takehome.developers.workers.dev/api/variants';
 
 addEventListener('fetch', event => {
   apiData = fetchApi(URL);
   event.respondWith(API())
 })
-
 
 /**
  * Get Data from api
