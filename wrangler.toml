@@ -1,6 +1,6 @@
-name = "{{project-name}}"
+name = "takehome"
 type = "javascript"
-account_id = ""
+account_id = "9f2a2b7bb2a58f86a65b9c57121dd76b"
 workers_dev = true
 route = ""
 zone_id = ""
